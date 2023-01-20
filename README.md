@@ -6,4 +6,4 @@ Luxspace is a platform that serves as a marketplace for household furniture, whe
 
 Frontend Stack :
 
-[![My Skills](https://skillicons.dev/icons?i=vite,react,tailwind,netlify,figma&theme=light)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=react,tailwind,netlify,figma&theme=light)](https://skillicons.dev)
