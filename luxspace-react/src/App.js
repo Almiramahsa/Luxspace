@@ -1,13 +1,13 @@
 import './assets/css/app.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import HomePage from 'pages/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <a className="text-4xl text-gray-900 " href="https://reactjs.org">
-          Luxspace
-        </a>
-      </header>
+      <Router>
+        <Route path="/" component={HomePage} />
+      </Router>
     </div>
   );
 }
