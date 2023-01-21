@@ -3,7 +3,11 @@ import './assets/css/app.css';
 function App() {
   return (
     <div className="App">
-      <h1 className="text-xl text-green-600 ">hello react!</h1>
+      <header className="App-header">
+        <a className="text-4xl text-gray-900 " href="https://reactjs.org">
+          Luxspace
+        </a>
+      </header>
     </div>
   );
 }
