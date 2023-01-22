@@ -1,9 +1,10 @@
 import React from 'react';
 import Header from 'parts/Header';
-export default function HomePage(props) {
+
+export default function HomePage() {
   return (
     <>
-      <Header></Header>
+      <Header theme="white" position="absolute" />
     </>
   );
 }
