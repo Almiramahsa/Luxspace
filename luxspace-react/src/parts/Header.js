@@ -8,7 +8,7 @@ export default function Header() {
         <div className="container mx-auto py-5">
           <div className="flex flex-stretch items-center">
             <div className="w-56 items-center flex">
-              <img src="/src/assets/images/logo_luxspace.png" alt="Luxspace |  Only the best quality products for your home" />
+              <img src="images/content/logo-1.png" alt="Luxspace" />
             </div>
             <div className="w-full"></div>
             <div className="w-auto">
