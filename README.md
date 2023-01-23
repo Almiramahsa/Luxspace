@@ -10,3 +10,8 @@ Luxspace is a platform that serves as a marketplace for household furniture, whe
  - Homepage
  - Product Details Page
  - Chart 
+
+## Laading Page : 
+![landing-page-luxspace](https://user-images.githubusercontent.com/53558772/214081502-993ca932-3ef5-4651-9c63-56f3dc0a8fe9.png)
+
+Here is the homepage of Luxspace website
