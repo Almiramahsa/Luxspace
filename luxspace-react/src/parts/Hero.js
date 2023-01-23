@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="flex items-center hero">
       <div className="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption">
-        <h1 className="text-3xl md:text-5xl leading-tight font-semibold m-2">
+        <h1 className="text-3xl md:text-4xl leading-tight font-semibold mt-20">
           The stylish, comfortable home <br className="" />
           you've been dreaming of.
         </h1>
@@ -14,7 +14,7 @@ export default function Hero() {
           handcrafted furniture for your home
         </h2>
         <div>
-          <Link to="#browse-the-room" className="bg-pink-400 text-black hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-200">
+          <Link to="#browse-the-room" className="bg-pink-400 text-black font-bold hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-200">
             Explore Now
           </Link>
         </div>
@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="overlay right-0 bottom-0 md:inset-0">
             <button
               className="video hero-cta focus:outline-none z-30 modal-trigger"
-              data-content='<div class="w-screen pb-56 md:w-88 md:pb-56 relative z-50">
+              data-content='<div className="w-screen pb-56 md:w-88 md:pb-56 relative z-50">
               <div className="absolute w-full h-full">
                 <iframe
                   width="100%"
