@@ -6,7 +6,7 @@ export default function Footer() {
     <section className="">
       <div className="border-t border-b border-gray-200 py-12 mt-16 px-4">
         <div className="flex justify-center mb-8">
-          <img src="images/content/logo-1.png" alt="Luxspace " />
+          <img src="/images/content/logo-1.png" alt="Luxspace " />
         </div>
         <aside className="container mx-auto">
           <div className="flex flex-wrap -mx-4 justify-center">
