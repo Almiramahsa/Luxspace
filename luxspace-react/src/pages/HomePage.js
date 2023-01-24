@@ -4,6 +4,7 @@ import Hero from 'parts/Hero';
 import JustArrived from 'parts/Homepage/JustArrived';
 import BrowseRoom from 'parts/Homepage/BrowseRoom';
 import Footer from 'parts/Footer';
+
 export default function HomePage() {
   return (
     <>
