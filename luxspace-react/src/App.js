@@ -1,13 +1,17 @@
 import './assets/css/app.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from 'pages/HomePage';
+import DetailsPage from 'pages/DetailsPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <a className="text-4xl text-gray-900 " href="https://reactjs.org">
-          Luxspace
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route path="/categories:idc" element={<DetailsPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
