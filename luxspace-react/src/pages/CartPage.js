@@ -2,8 +2,8 @@ import React from 'react';
 import Header from 'parts/Header';
 import Footer from 'parts/Footer';
 import Breadcrumb from 'components/Breadcrumb';
-import ShoppingCart from './Cart/ShoppingCart';
-import ShippingDetails from './Cart/ShippingDetails';
+import ShoppingCart from '../parts/Cart/ShoppingCart';
+import ShippingDetails from '../parts/Cart/ShippingDetails';
 
 export default function CartPage() {
   return (
