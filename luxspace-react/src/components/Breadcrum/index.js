@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import propTypes from 'prop-types';
-import { list } from 'postcss';
 
-export default function Breadcrum({ List }) {
+import { Link } from 'react-router-dom';
+
+export default function Breadcrumb({ list }) {
   return (
     <section className="bg-gray-100 py-8 px-4">
       <div className="container mx-auto">
@@ -24,6 +24,6 @@ export default function Breadcrum({ List }) {
   );
 }
 
-Breadcrum.propTypes = {
+Breadcrumb.propTypes = {
   list: propTypes.array.isRequired,
 };

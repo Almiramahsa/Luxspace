@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function JustArrived() {
   return (
-    <section className="flex flex-wrap py-16">
+    <section className="flex flex-col py-16">
       <div className="container mx-auto mb-4">
         <div className="flex justify-center text-center mb-4">
           <h3 className="text-2xl capitalize font-semibold">
@@ -12,10 +12,10 @@ export default function JustArrived() {
         </div>
       </div>
 
-      <div className="flex flex-row z-10">
-        <div className="flex mx-4 flex-row relative">
+      <div className="overflow-x-hidden px-4" id="carousel">
+        <div className="flex -mx-4 flex-row relative">
           {/* <!-- ROW 1 --> */}
-          <div className="flex-auto px-4 relative card group">
+          <div className=" px-4 relative card group">
             <div className="rounded-xl overflow-hidden card-shadow relative" style={{ width: '287px', height: '386px' }}>
               <div className="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35">
                 <div className="bg-white text-gray-800 rounded-full w-16 h-16 flex items-center justify-center">
@@ -25,6 +25,7 @@ export default function JustArrived() {
                   </svg>
                 </div>
               </div>
+
               <img src="./images/content/image-arrived-1.png" alt="" className="w-full h-full object-cover object-center" />
             </div>
             <h5 className="text-lg font-semibold mt-4">Cangkir Mauttie</h5>
@@ -32,8 +33,6 @@ export default function JustArrived() {
             <a href="details.html" className="stretched-link">
               {/* <!-- fake children --> */}
             </a>
-            {/* </div>
-          <!-- END: ROW 1 --> */}
 
             {/* <!-- START: ROW 2 --> */}
             <div className=" px-4 relative card group">
