@@ -1,6 +1,7 @@
 import useAsync from 'helpers/hooks/useAsync';
 import React, { useEffect } from 'react';
 import fetch from 'helpers/fetch';
+import 'helpers/format/thousand';
 
 function Loading({ ratio = {} }) {
   const dummy = [
