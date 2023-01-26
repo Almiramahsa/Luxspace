@@ -23,15 +23,18 @@ export default function useAsync(initialState) {
   const run = useCallback(
     (promise) => {
       if (!promise || !promise.then) throw new Error(`The argument passed to useAsync().run must be a promise`);
-
       safeSetState({ status: 'pending' });
       return promise.then(
         (data) => {
           safeSetState({ data, status: 'resolved' });
+
           return data;
         },
         (error) => {
-          safeSetState({ status: 'rejected', error });
+          safeSetState({
+            status: 'rejected',
+            error: JSON.parse(error.message),
+          });
         }
       );
     },
