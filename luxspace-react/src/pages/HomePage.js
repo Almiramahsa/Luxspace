@@ -6,6 +6,7 @@ import BrowseRoom from 'parts/Homepage/BrowseRoom';
 import Footer from 'parts/Footer';
 import useScrollAnchor from 'helpers/hooks/useScrollAnchor';
 import useModalDOM from 'helpers/hooks/useModalDOM';
+import Copyright from 'parts/Copyright';
 
 export default function HomePage() {
   useScrollAnchor();
@@ -18,6 +19,7 @@ export default function HomePage() {
       <BrowseRoom />
       <JustArrived />
       <Footer />
+      <Copyright />
     </>
   );
 }
