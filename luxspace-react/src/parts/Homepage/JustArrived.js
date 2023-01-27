@@ -43,7 +43,6 @@ export default function JustArrived() {
       </div>
       <div className="overflow-x-hidden px-4" id="carousel">
         <div className="container mx-auto" ref={refContainer}></div>
-        {/* <!-- <div className="overflow-hidden z-10"> --> */}
 
         {isLoading ? (
           <div
