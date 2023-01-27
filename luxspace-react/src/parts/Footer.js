@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
         <aside className="container mx-auto">
           <div className="flex flex-wrap -mx-4 justify-center">
-            <FooterLinks setActive={setActive} isActive={active === 1 ? false : true} title="Overview">
+            <FooterLinks setActive={setActive} isActive={active === 1 ? false : 1} title="Overview">
               <li>
                 <Link to="/shipping" className="hover:underline py-1 block">
                   Shipping
@@ -67,7 +67,7 @@ export default function Footer() {
               </li>
             </FooterLinks>
 
-            <FooterLinks setActive={setActive} isActive={active === 3 ? false : 3} title="explore">
+            <FooterLinks setActive={setActive} isActive={active === 3 ? false : 3} title="Explore">
               <li>
                 <Link to="/terms-cons" className="hover:underline py-1 block">
                   Terms & Conds

@@ -13,6 +13,7 @@ function App() {
       <Routes>
         <Route index path="/" element={<HomePage />} />
         <Route path="/categories:idc" element={<DetailsPage />} />
+        <Route path="/categories/:idc/producs/:idp" element={<DetailsPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/success-payment" element={<PaymentSuccess />} />
         <Route path="*" element={<NotFound />} />
