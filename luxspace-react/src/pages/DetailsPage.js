@@ -90,7 +90,7 @@ function LoadingSuggestion() {
     </section>
   );
 }
-export default function DetailsPage() {
+export default function HomePage() {
   const { idp } = useParams();
   const { data, error, run, isLoading, isError } = useAsync();
 
