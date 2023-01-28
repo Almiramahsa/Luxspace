@@ -4,10 +4,10 @@ import Footer from 'parts/Footer';
 import Breadcrumb from 'components/Breadcrumb';
 import ShoppingCart from '../parts/Cart/ShoppingCart';
 import ShippingDetails from '../parts/Cart/ShippingDetails';
-import Documents from 'parts/Document';
+import Document from 'parts/Document';
 export default function CartPage() {
   return (
-    <Documents>
+    <Document>
       <Header theme="black" />
       <Breadcrumb
         list={[
@@ -23,8 +23,7 @@ export default function CartPage() {
           </div>
         </div>
       </section>
-
       <Footer />
-    </Documents>
+    </Document>
   );
 }
