@@ -1,7 +1,6 @@
 {
   "name": "luxspace-react",
   "version": "0.1.0",
-  "homepage": "https://github.com/Almiramahsa.github.io/porto_luxspace_demo",
   "private": true,
   "dependencies": {
     "html-react-parser": "^3.0.8",
@@ -12,8 +11,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
