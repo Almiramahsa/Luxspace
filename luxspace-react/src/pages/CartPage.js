@@ -4,8 +4,9 @@ import Footer from 'parts/Footer';
 import Breadcrumb from 'components/Breadcrumb';
 import ShoppingCart from '../parts/Cart/ShoppingCart';
 import ShippingDetails from '../parts/Cart/ShippingDetails';
-
+import useScrollToTop from 'helpers/hooks/useScrollToTop';
 export default function CartPage() {
+  useScrollToTop();
   return (
     <>
       <Header theme="black" />

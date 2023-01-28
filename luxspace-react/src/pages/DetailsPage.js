@@ -10,7 +10,7 @@ import useAsync from 'helpers/hooks/useAsync';
 import Copyright from 'parts/Copyright';
 import Document from 'parts/Document';
 import ErrorMessage from 'parts/ErrorMessage';
-
+import useScrollToTop from 'helpers/hooks/useScrollToTop';
 function LoadingProductDetail() {
   return (
     <section className="container mx-auto">
@@ -91,6 +91,7 @@ function LoadingSuggestion() {
   );
 }
 export default function HomePage() {
+  useScrollToTop();
   const { idp } = useParams();
   const { data, error, run, isLoading, isError } = useAsync();
 
