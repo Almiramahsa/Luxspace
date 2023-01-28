@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer } from "react";
+import React, { createContext, useContext, useReducer } from 'react';
 
 const Context = createContext();
 
@@ -10,7 +10,7 @@ export function useGlobalContext() {
   const [state, dispatch] = useContext(Context);
 
   if (!state || !dispatch) {
-    throw new Error("useGlobalContext must be used within a Provider");
+    throw new Error('useGlobalContext must be used within a Provider');
   }
 
   return { state, dispatch };
@@ -18,7 +18,7 @@ export function useGlobalContext() {
 
 function Reducer(state, action) {
   switch (action.type) {
-    case "ADD_TO_CART":
+    case 'ADD_TO_CART':
       console.log(action);
       return {
         ...state,
@@ -30,11 +30,11 @@ function Reducer(state, action) {
           : { [action.item.id]: action.item },
       };
 
-    case "REMOVE_FROM_CART":
+    case 'REMOVE_FROM_CART':
       return {
         ...state,
         cart: Object.keys(state.cart)
-          .filter((key) => +key !== +action.id)
+          .filter((key) => +key !== Number(action.id))
           .reduce((acc, key) => {
             const item = state.cart[key];
             acc[item.id] = item;
@@ -42,7 +42,7 @@ function Reducer(state, action) {
           }, {}),
       };
 
-    case "RESET_CART":
+    case 'RESET_CART':
       return {
         ...state,
         cart: initialState.cart,

@@ -3,7 +3,9 @@ import Header from 'parts/Header';
 import Footer from 'parts/Footer';
 import Breadcrumb from 'components/Breadcrumb';
 import { Link } from 'react-router-dom';
+import useScrollToTop from 'helpers/hooks/useScrollToTop';
 export default function PaymentSuccess() {
+  useScrollToTop();
   return (
     <>
       <Header theme="black" />
