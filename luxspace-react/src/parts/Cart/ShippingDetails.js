@@ -45,7 +45,7 @@ export default function ShippingDetails() {
       });
 
       if (res) {
-        navigate.push('/congratulation');
+        navigate('/congratulation');
         dispatch({
           type: 'RESET_CART',
         });
