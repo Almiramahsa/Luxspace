@@ -10,7 +10,7 @@ import useAsync from 'helpers/hooks/useAsync';
 import Copyright from 'parts/Copyright';
 import Document from 'parts/Document';
 import ErrorMessage from 'parts/ErrorMessage';
-import useScrollToTop from 'helpers/hooks/useScrollToTop';
+
 function LoadingProductDetail() {
   return (
     <section className="container mx-auto">
@@ -91,7 +91,6 @@ function LoadingSuggestion() {
   );
 }
 export default function HomePage() {
-  useScrollToTop();
   const { idp } = useParams();
   const { data, error, run, isLoading, isError } = useAsync();
 
@@ -99,27 +98,25 @@ export default function HomePage() {
     run(fetch({ url: `/api/products/${idp}` }));
   }, [run, idp]);
   return (
-    <>
-      <Document>
-        <Header theme="black" />
-        <Breadcrumb
-          list={[
-            { url: '/', name: 'Home' },
-            { url: '/categories/921', name: 'Office Room' },
-            { url: '/categories/921/products/212', name: 'Details' },
-          ]}
-        />
-        {isError ? (
-          <ErrorMessage title="Product Not Found" body={error.errors.message} />
-        ) : (
-          <>
-            {isLoading ? <LoadingProductDetail /> : <ProductDetail data={data} />}
-            {isLoading ? <LoadingSuggestion /> : <Suggestion data={data?.relatedProducts || {}} />}
-          </>
-        )}
-        <Footer />
-        <Copyright />
-      </Document>
-    </>
+    <Document>
+      <Header theme="black" />
+      <Breadcrumb
+        list={[
+          { url: '/', name: 'Home' },
+          { url: '/categories/921', name: 'Office Room' },
+          { url: '/categories/921/products/212', name: 'Details' },
+        ]}
+      />
+      {isError ? (
+        <ErrorMessage title="Product Not Found" body={error.errors.message} />
+      ) : (
+        <>
+          {isLoading ? <LoadingProductDetail /> : <ProductDetail data={data} />}
+          {isLoading ? <LoadingSuggestion /> : <Suggestion data={data?.relatedProducts || {}} />}
+        </>
+      )}
+      <Footer />
+      <Copyright />
+    </Document>
   );
 }

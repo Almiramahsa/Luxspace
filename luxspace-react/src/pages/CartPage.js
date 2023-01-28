@@ -4,11 +4,10 @@ import Footer from 'parts/Footer';
 import Breadcrumb from 'components/Breadcrumb';
 import ShoppingCart from '../parts/Cart/ShoppingCart';
 import ShippingDetails from '../parts/Cart/ShippingDetails';
-import useScrollToTop from 'helpers/hooks/useScrollToTop';
+import Documents from 'parts/Document';
 export default function CartPage() {
-  useScrollToTop();
   return (
-    <>
+    <Documents>
       <Header theme="black" />
       <Breadcrumb
         list={[
@@ -26,6 +25,6 @@ export default function CartPage() {
       </section>
 
       <Footer />
-    </>
+    </Documents>
   );
 }

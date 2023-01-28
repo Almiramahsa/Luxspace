@@ -2,14 +2,13 @@ import React from 'react';
 import Header from 'parts/Header';
 import Footer from 'parts/Footer';
 import ErrorMessage from 'parts/ErrorMessage';
-import useScrollToTop from 'helpers/hooks/useScrollToTop';
+import Document from 'parts/Document';
 export default function NotFound() {
-  useScrollToTop();
   return (
-    <>
+    <Document>
       <Header theme="black" />
       <ErrorMessage />
       <Footer />
-    </>
+    </Document>
   );
 }
