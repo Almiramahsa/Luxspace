@@ -123,7 +123,8 @@ ul.breadcrumb li:last-child a {
   }
 }
 
-a.cart svg g circle.dot {
+a.
+ svg g circle.dot {
   @apply hidden;
 }
 
