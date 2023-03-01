@@ -13,6 +13,7 @@
  - Chart 
 
 ## Laading Page : 
-![landing-page-luxspace](https://user-images.githubusercontent.com/53558772/214082224-5a853405-4239-4a2c-9d8d-5e4260234de2.png)
+![luxspace](https://user-images.githubusercontent.com/53558772/222078463-1e3f0300-4640-4b92-af56-609c757bf14a.png)
+
 
 Here is the homepage of Luxspace website
